@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    // baseURL: 'https://vroomcabs-server-production.up.railway.app/', // Replace with your backend URL
-    baseURL: 'http://127.0.0.1:3000/', // Replace with your backend URL
+    baseURL: 'https://devops-server-production.up.railway.app/', // Replace with your backend URL
+    // baseURL: 'http://127.0.0.1:3000/', // Replace with your backend URL
 
     headers: {
         'Content-Type': 'application/json',
