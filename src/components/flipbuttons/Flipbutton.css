@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flip-button {
+    @apply bg-blue-500 text-white py-2 px-4 rounded-lg text-lg font-bold relative transition-transform duration-600;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.flip-button:hover {
+    @apply transform rotate-y-180;
+}
+
+.flip-button::before {
+    content: attr(data-flip-text);
+    @apply absolute top-0 left-0 w-full h-full flex items-center justify-center bg-blue-500 rounded-lg;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
