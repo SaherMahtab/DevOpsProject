@@ -522,8 +522,7 @@ const Homepage2 = () => {
      {loading && <LoadingComponent/>}
           <div className='text-center flex justify-center items-center relative bg-no-repeat bg-cover bg-center h-64 object-cover' style={{ backgroundImage: `url(${Images.cabbg})`, }}>
                 <h1 className="text-center text-4xl text-white font-bold">
-                   
-                    Have a Safe Ride!
+                    Ride Comfortably, Arrive Safely!
                 </h1>
             </div>
 
